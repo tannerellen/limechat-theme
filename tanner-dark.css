@@ -1,0 +1,161 @@
+/* 
+    Tanner's LimeChat theme based on the devdk - Dark theme
+*/
+
+html {
+    font-family: 'Avenir Next', 'Open Sans', 'Menlo', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    padding-right: 5%;
+    padding-left: 5%;
+    word-wrap: break-word;
+    color: #fff;
+    background-color: rgb(46, 50, 57);
+}
+
+body {
+    font-size: 1.2em;
+    line-height: 1.80em;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.url {
+    text-decoration: none;
+    color: #34aadc;
+}
+
+.url:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    font-weight: 500;
+    margin: 0 3px 0 0;
+    padding: 3px 5px;
+    color: #fff;
+    background: #007aff;
+}
+
+.line {
+    position: relative;
+    float: right;
+    width: 80%;
+    margin: .8em 50px 0 0;
+    letter-spacing: .5px;
+}
+
+.time {
+    position: absolute;
+    right: -75px;
+    display: block;
+    float: right;
+    width: 50px;
+    color: #454b55;
+}
+.time:hover {
+    color: #8e8e93;
+}
+
+.place {
+    display: block;
+    color: #8e8e93;
+}
+
+.sender {
+    display: inline-block;
+    width: 27%;
+    margin-right: 3%;
+    margin-left: -30%;
+    text-align: right;
+}
+
+.sender[type=normal] {
+    font-weight: 400;
+    color: rgb(232, 125, 62);
+}
+
+.sender[type=myself] {
+    color: #34aadc;
+}
+
+.message[type=notice] {
+    color: #4cd964;
+}
+
+.message[type=action] {
+    margin-left: 2%;
+    color: rgb(229, 181,103);
+}
+
+div[type=action] {
+    font-size: .9em;
+}
+
+div[type=action] .sender {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+    padding-left: 3%;
+    text-align: left;
+    color: rgb(229, 181,103);
+    border-left: 1px dashed rgb(229, 181,103);
+}
+
+.message[type=system],
+.message[type=join],
+.message[type=part],
+.message[type=kick],
+.message[type=quit],
+.message[type=kill],
+.message[type=nick],
+.message[type=mode],
+.message[type=invite],
+.message[type=wallops] {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+    padding-left: 3%;
+    text-align: left;
+    color: #8e8e93;
+    border-left: 1px dashed rgb(176, 82, 127);
+}
+
+.inlineimage {
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+    margin: 2em 0 1em 0;
+    border: none;
+}
+
+
+
+div[type=topic] {
+    margin-top: 1em;
+}
+
+.message[type=topic],
+.message[type=reply] {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+    padding-left: 3%;
+    text-align: left;
+    color: #5856d6;
+    border-left: 2px dashed #5856d6;
+}
+
+.message[type=error],
+.message[type=error_reply],
+.message[type=dcc_send_send],
+.message[type=dcc_send_receive],
+.message[type=debug_send],
+.message[type=debug_receive] {
+    color: #ff3a2d;
+}
+
+@media screen and (max-width:720px) {
+    body {
+        font-size: 1em;
+    }
+}
